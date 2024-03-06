@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Header from './Header'
 
 export default function DrinkDetails() {
   let { id } = useParams();
@@ -28,7 +29,7 @@ export default function DrinkDetails() {
 
   return (
     <div className="card">
-      {/* will need to add margin top to this element to see title. Currently hidden in the header */}
+      <Header allowSearch={true} />
       <h1>{drink.strDrink}</h1>
       <img src={drink.strDrinkThumb} alt="" />
       <h3>Type of Glass: {drink.strGlass}</h3>
