@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function NonAlcoholList() {
   const navigate = useNavigate();
   let showItem = (id) => {
-    navigate(`${id}`);
+    navigate(`/drinklist/${id}`);
   };
 
   const [allDrinks, setAllDrinks] = useState([]);
