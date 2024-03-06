@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useNavigate } from "react"
 import '../componentsStyles/home.css'
 
 // SWIPER IMPORTS
@@ -16,10 +16,16 @@ import {Autoplay, FreeMode, Pagination, Navigation } from 'swiper/modules';
 
 
 export default function Home() {
+  // const navigate = useNavigate()
+  // let showItem = (id) => {
+  //   navigate(`${id}`)
+  // }
+  
   const [allDrinks, setAllDrinks] = useState([])
 
-  useEffect(() => {
 
+
+  useEffect(() => {
     const getDrinks = async () => {
       let response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
       const drinksArr = response.data.drinks
@@ -35,7 +41,7 @@ export default function Home() {
 
       setAllDrinks(randomArr)
     }
-    getDrinks()
+    getDrinks()    
   }, [])
 
   return (
@@ -43,14 +49,6 @@ export default function Home() {
     <div>
       <h2 className="drink-of-day">Drinks of the day</h2>
       <Swiper
-        // slidesPerView={'auto'}
-        // centeredSlides={true}
-        // spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // modules={[Pagination]}
-          // className="mySwiper"
         slidesPerView={3}
         spaceBetween={30}
         autoplay={{
@@ -68,12 +66,12 @@ export default function Home() {
         {allDrinks.map((drink) => (
           <div className="drink-card" key={drink.idDrink}>
             {/* <p>{drink.strDrink}</p> */}
-            <SwiperSlide><img src={drink.strDrinkThumb} alt='pic' /></SwiperSlide>
+            <SwiperSlide><img src={drink.strDrinkThumb} alt='pic' /><p className="drink-name">{drink.strDrink}</p></SwiperSlide>
           </div>
         ))}
       </Swiper>
       </div>
-
-      </>
+      
+      </>  
   )
 }

@@ -1,3 +1,25 @@
+/* Swiper */
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drink-name {
+  font-size: 1.5em;
+  color: antiquewhite;
+  text-align: center;
+  position: absolute;
+  bottom: 10px; /* Distance from the bottom */
+  left: 30%;
+}
+
 .drink-of-day {
   margin-top: 100px;
 }
