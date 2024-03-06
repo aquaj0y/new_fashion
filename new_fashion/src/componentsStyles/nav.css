@@ -47,7 +47,8 @@
 
 .nav-text:hover {
   background-color: rgb(13, 0, 126);
-  width: 225px;
+  width: 227px;
+  color: azure;
 }
 
 .nav-menu-items {
