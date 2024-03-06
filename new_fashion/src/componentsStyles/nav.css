@@ -1,13 +1,14 @@
 .header {
   background-color: #79b2d3;
   height: 100px;
-  width: 5000px;
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-top: -20px;
-  margin-left: -10px;
   position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -20px;
 }
 
 .menu-bars {
