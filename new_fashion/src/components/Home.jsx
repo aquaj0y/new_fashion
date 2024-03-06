@@ -71,7 +71,7 @@ export default function Home() {
             <SwiperSlide><img src={drink.strDrinkThumb} alt='pic' /></SwiperSlide>
           </div>
         ))}
-</Swiper>
+      </Swiper>
       </div>
 
       </>
