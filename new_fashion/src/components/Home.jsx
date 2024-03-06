@@ -19,7 +19,7 @@ export default function Home() {
   const [allDrinks, setAllDrinks] = useState([])
 
   useEffect(() => {
-    
+
     const getDrinks = async () => {
       let response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
       const drinksArr = response.data.drinks
@@ -35,13 +35,13 @@ export default function Home() {
 
       setAllDrinks(randomArr)
     }
-    getDrinks()    
+    getDrinks()
   }, [])
 
   return (
     <>
     <div>
-      <h2>Drinks of the day</h2>
+      <h2 className="drink-of-day">Drinks of the day</h2>
       <Swiper
         // slidesPerView={'auto'}
         // centeredSlides={true}
@@ -73,7 +73,7 @@ export default function Home() {
         ))}
 </Swiper>
       </div>
-      
-      </>  
+
+      </>
   )
 }
