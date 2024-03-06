@@ -1,11 +1,9 @@
-h2 {
-  margin-top: 100px;
-}
 
 .grid {
-  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  grid-row-gap: 25px;
 }
 
 .card img {

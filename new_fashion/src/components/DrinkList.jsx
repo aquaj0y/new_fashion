@@ -37,8 +37,9 @@ export default function DrinkList () {
       <div className="grid">
         {allDrinks.map((drink, index)=>(
           <div className="card" key={drink.idDrink} onClick={()=> showItem(drink.idDrink)}>
-            <img src={drink.strDrinkThumb} alt="" />
             <h2>{drink.strDrink}</h2>
+            <img src={drink.strDrinkThumb} alt="" />
+
           </div>
         ))}
 
