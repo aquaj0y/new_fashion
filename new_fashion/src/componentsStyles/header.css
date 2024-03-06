@@ -1,12 +1,30 @@
-#search-bar {
+#searchBar {
   width: 220px;
   height: 25px;
   border-radius: 5px;
   text-align: center;
+  justify-content: center;
   margin-right: 20px;
   margin-left: 10px;
+  margin-bottom: 8px;
 }
 
 .header {
   justify-content: space-between;
+  padding-top: 5px;
+}
+
+.search {
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+}
+
+.search-button {
+  background: none;
+  position: relative;
+  align-items: self-end;
+  height: 32px;
+  width: 32px;
 }

@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import '../componentsStyles/drinklist.css'
 
 
 export default function DrinkList () {
@@ -36,8 +37,9 @@ export default function DrinkList () {
       <div className="grid">
         {allDrinks.map((drink, index)=>(
           <div className="card" key={drink.idDrink} onClick={()=> showItem(drink.idDrink)}>
-            <h1>{drink.strDrink}</h1>
+            <h2>{drink.strDrink}</h2>
             <img src={drink.strDrinkThumb} alt="" />
+
           </div>
         ))}
 
