@@ -26,7 +26,7 @@ export default function DrinkList () {
     }
     getAllDrinks()
   }, [])
-  console.log(allDrinks)
+  console.log(allDrinks[0])
 
   if(!allDrinks){
     return <h1>Loading drinks, please wait</h1>
