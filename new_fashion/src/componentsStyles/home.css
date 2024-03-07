@@ -1,3 +1,39 @@
+.title {
+  font-size: 86px;
+  font-family: "EB Garamond", serif;
+  margin-top: 110px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: antiquewhite;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.subtitle {
+  font-size: 40px;
+  font-family: "EB Garamond", serif;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: antiquewhite;
+  text-decoration: overline;
+  font-weight: 900;
+  -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: black;
+}
+
+#background-img {
+  background-image: url("https://www.foodandwine.com/thmb/B7IP1Bp7roAcrPKXISZbWMnT1x8=/2000x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Spirits-FTX-BLOG0423-4e938422b8b346218db6c0e2431a790c.jpg");
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -25px;
+  padding-bottom: 100px;
+}
+
 /* Swiper */
 
 .swiper-slide {
@@ -12,16 +48,24 @@
 }
 
 .drink-name {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  font-family: "EB Garamond", serif;
+  margin: 0 auto;
   color: antiquewhite;
+  text-decoration: overline;
+  font-weight: 900;
+  -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: black;
   text-align: center;
+  align-items: center;
   position: absolute;
-  bottom: 10px; /* Distance from the bottom */
-  left: 30%;
+  bottom: 25px; /* Distance from the bottom */
 }
 
 .drink-of-day {
-  margin-top: 100px;
+  margin-top: 20px;
+  font-family: "EB Garamond", serif;
+  text-decoration: overline;
 }
 
 .grid {

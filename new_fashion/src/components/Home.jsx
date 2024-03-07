@@ -55,7 +55,6 @@ export default function Home() {
 
   return (
     <>
-    <div className="feature">
       <h2 className="drink-of-day">Drinks of the day</h2>
       <Swiper
         slidesPerView={3}
