@@ -13,7 +13,8 @@
 }
 
 .menu-bars {
-  margin-left: 2rem;
+  display: flex;
+  margin-left: -360px;
   font-size: 2rem;
   background: none;
   color: rgb(0, 0, 0);
@@ -49,7 +50,7 @@
 }
 
 .nav-text:hover {
-  background-color: rgb(13, 0, 126);
+  background-color: #49a1d4;
   width: 227px;
   color: azure;
 }
