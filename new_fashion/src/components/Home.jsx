@@ -47,6 +47,10 @@ export default function Home() {
   return (
     <>
     <div>
+      <div id='background-img'>
+      <div className='title'> The New Fashioned </div>
+      <div className='subtitle'> Complete drink list site </div>
+      </div>
       <h2 className="drink-of-day">Drinks of the day</h2>
       <Swiper
         slidesPerView={3}
