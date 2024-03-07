@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import Nav from './Nav'
 import '../componentsStyles/header.css'
 
@@ -53,6 +53,7 @@ export default function Header () {
 
   return(
     <div className='header'>
+      <Link to="/"><img class="home-button" src="https://cdn-icons-png.freepik.com/512/9094/9094099.png?ga=GA1.1.1072506134.1706482678&"/></Link>
       <Nav />
       <form onSubmit={handleSearch}>
         <input
