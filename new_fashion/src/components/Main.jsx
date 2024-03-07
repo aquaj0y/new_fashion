@@ -29,7 +29,6 @@ export default function Main () {
 
   return(
     <div>
-      <h3> This is the Main </h3>
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/drinklist" element={ <DrinkList drink={drink}/> } />
