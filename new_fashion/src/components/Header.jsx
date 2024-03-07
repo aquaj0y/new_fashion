@@ -53,7 +53,6 @@ export default function Header () {
 
   return(
     <div className='header'>
-      <Link to="/"><img className="home-button" src="https://cdn-icons-png.freepik.com/512/9094/9094099.png?ga=GA1.1.1072506134.1706482678&"/></Link>
       <Nav />
       <form onSubmit={handleSearch}>
         <input
@@ -65,6 +64,7 @@ export default function Header () {
         />
         <button className='search' type='submit'><img className='search-button' src='https://cdn-icons-png.flaticon.com/512/2907/2907439.png'/></button>
       </form>
+      <Link to="/"><img className="home-button" src="https://cdn-icons-png.freepik.com/512/9094/9094099.png?ga=GA1.1.1072506134.1706482678&"/></Link>
     </div>
   )
 }
