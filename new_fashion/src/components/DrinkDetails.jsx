@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import axios from "axios";
+import Header from './Header'
+import '../componentsStyles/drinkdetails.css'
 
 export default function DrinkDetails() {
   let { id } = useParams();
@@ -27,8 +30,8 @@ export default function DrinkDetails() {
   }
 
   return (
-    <div className="card">
-      {/* will need to add margin top to this element to see title. Currently hidden in the header */}
+    <div className="details-card">
+      <Header allowSearch={true} />
       <h1>{drink.strDrink}</h1>
       <img src={drink.strDrinkThumb} alt="" />
       <h3>Type of Glass: {drink.strGlass}</h3>
@@ -36,7 +39,7 @@ export default function DrinkDetails() {
       <ul>
         {ingredients.map((ingredient, index) =>
           drink[`${ingredient}`] ? (
-            <li key={index}>
+            <li className='ingredient-list' key={index}>
               {drink[amounts[index]]}
               {drink[`${ingredient}`]}
             </li>
@@ -45,6 +48,7 @@ export default function DrinkDetails() {
       </ul>
       <h2>Instructions</h2>
       <h3>{drink.strInstructions}</h3>
+      <Link className='return-link' to="/drinklist"> Return to Drink list!</Link>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.details-card {
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+.ingredient-list {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.return-link {
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: azure;
+  text-decoration: none;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import Home from "./Home"
 import DrinkList from './DrinkList'
 import DrinkDetails from './DrinkDetails'
@@ -21,7 +22,7 @@ export default function Main () {
         'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' +
           new URLSearchParams(location.search).get('search')
       )
-      setDrinks(response.data.drinks || [])
+      setDrink(response.data.drinks || [])
     }
 
     getDrinks()
@@ -29,7 +30,6 @@ export default function Main () {
 
   return(
     <div>
-      <h3> This is the Main </h3>
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/drinklist" element={ <DrinkList drink={drink}/> } />
