@@ -14,19 +14,11 @@
   padding-top: 5px;
 }
 
-.search {
-  margin-right: 10px;
-  justify-content: center;
-  align-items: center;
-  display: inline;
-}
-
 .search-button {
   background: none;
-  position: relative;
-  align-items: self-end;
-  height: 32px;
-  width: 32px;
+  display: inline-block;
+  height: 3.8vh;
+  width: 3.8vh;
 }
 
 .home-button {
