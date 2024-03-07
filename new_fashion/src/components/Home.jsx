@@ -54,7 +54,11 @@ export default function Home() {
   }, [])
 
   return (
-    <>
+    <div>
+      <div id='background-img'>
+        <div className='title'> The New Fashioned </div>
+        <div className='subtitle'> Complete drink list site </div>
+      </div>
       <h2 className="drink-of-day">Drinks of the day</h2>
       <Swiper
         slidesPerView={3}
@@ -69,8 +73,7 @@ export default function Home() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
+        className="mySwiper">
         {allDrinks.map((drink) => (
           <div className="drink-card" key={drink.idDrink}>
             {/* <p>{drink.strDrink}</p> */}
@@ -78,15 +81,12 @@ export default function Home() {
           </div>
         ))}
       </Swiper>
-      </div>
-
       <div className="feeling-lucky">
         <h2>Feeling lucky drink</h2>
         <img id="lucky-drink" src={LuckyDog} alt="dog shaking cocktail shaker" width="300" height="300"
         onClick={()=>showItem(luckyDrink.idDrink)}
         ></img>
       </div>
-
-      </>  
+      </div>
   )
 }
